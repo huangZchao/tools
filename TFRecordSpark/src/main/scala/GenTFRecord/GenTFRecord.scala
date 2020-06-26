@@ -14,7 +14,7 @@ object GenTFRecord {
     System.setProperty("hadoop.home.dir", "D:/hadoop")
     val spark = SparkSession.builder().master("local[4]").appName("tfrecords_examples").getOrCreate()
 
-    val path = "C:/Users/Administrator/Desktop/test-output.tfrecord"
+    val path = "E:/git_project/tmp_data/test-output.tfrecord"
     val file=new File(path)
     if(file.exists()) {
       dirDel(file)
